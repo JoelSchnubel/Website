@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" type="text/css" >
+    <title>My Website</title>
+</head>
+
+<body>
+    <div id="project_page">
+        <div id="project_headleft"></div>
+
+        <div id="project_headright">
+            <button id="home_button" class="nav-button"><p class="text">Home</p></button>
+            <button id="about_button" class="nav-button"><p class="text">About</p></button>
+            <button id="skills_button" class="nav-button"><p class="text">Skills</p></button>
+            <button id="portfolio_button" class="nav-button"><p class="text">Portfolio</p></button>
+            <button id="projects_button" class="nav-button"><p class="text">Projects</p></button>
+            <button id="contact_button" class="nav-button"><p class="text">Contact</p></button>
+        </div>
+        
+        <div id="project_left">
+            <div class="project-button-container">
+                <button id="project-button-1" class="project-button">&#10095;</button>
+                <button id="project-button-2" class="project-button">&#10095;</button>
+                <button id="project-button-3" class="project-button">&#10095;</button>
+            </div>
+        </div>
+
+
+        <div id="project_middle">
+                <div class="project-popup-container-left">
+                    <div id="popup-1" class="popup">
+                        <p class="popup-heading left-popup-heading">Word embeddings</p>
+                        <div class = "popup-content invis" >
+                            <p> In this final Project given by in the Lecture Stochastic Languange Processing(SLP), we were given the task of working with the GloVe and word2vec 
+                                embeddings as well as training our own word embeddings using the 
+                                <a target="_blank" href ="https://github.com/stanfordnlp/glove" style="color:blue; text-decoration: underline;">GloVe repo</a> and
+                                <a target="_blank" href ="https://radimrehurek.com/gensim/models/word2vec.html" style="color:blue; text-decoration: underline;">gensim library</a>
+                                across different parameters.
+                                We were then asked to train a random Firest classifier with 5-fold cross validation to fix the depth. After plotting the classifiers performance 
+                                across a basket of vector embedding sizes and context lengths 
+                                we compared these results to the 
+                                <a target="_blank" href ="https://glove-embeddings.github.io/" style="color:blue; text-decoration: underline;">global GloVe embeddings</a>, 
+                                resulting in our embedding achieveing a slightly better result. However this only holds true on the trained domain. if we switch the corpus and 
+                                continue using the IMDB embeddings we can see that GloVe outperforms our model as to be expected.</p>
+                                <figure ><img src ="Images/MyConf_Matrix.PNG"><figcaption>House model with embedding sizes of 100 and context length of 5</figcaption></figure>
+                                <figure><img src ="Images/GloVe_Conf_Matrix.PNG"><figcaption>GloVe model with embedding sizes of 200 and context length of 10</figcaption></figure>
+                        </div>
+                    </div>
+                
+                    <div id="popup-2" class="popup">
+                        <p class="popup-heading left-popup-heading">Spoken Digit Recongintion</p>
+                        <div class ="popup-content invis">
+                               
+                        </div>
+                    </div>
+                
+                    <div id="popup-3" class="popup">
+                        <p class="popup-heading left-popup-heading">Face detection</p>
+                        <div class ="popup-content invis">
+
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="project-popup-container-right">
+                    <div id="popup-4" class="popup">
+                        <p class="popup-heading right-popup-heading">Q-Learing with Snake</p>
+                        <div class ="popup-content invis">
+
+                        </div>
+                    </div>
+                
+                    <div id="popup-5" class="popup">
+                        <p class="popup-heading right-popup-heading">GML 2 project</p>
+                        <div class ="popup-content invis">
+
+                        </div>
+                    </div>
+                
+                    <div id="popup-6" class="popup">
+                        <p class="popup-heading right-popup-heading">Projectseminar</p>
+                        <div class ="popup-content invis">
+
+                        </div>
+                    </div>
+                </div>
+
+            <div id="number-container"></div>
+        </div>
+
+        <div id="project_right">
+            <div class="project-button-container">
+                <button id="project-button-4"class="project-button">&#10094;</button>
+                <button id="project-button-5"class="project-button">&#10094;</button>
+                <button id="project-button-6"class="project-button">&#10094;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
